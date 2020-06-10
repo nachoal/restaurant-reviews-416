@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Top restaurants in your area 🍔🍔🍔🍔</h1>
+  <ul>
+    <% @restaurants.each do |restaurant|  %>
+      <li><%= restaurant.name %> - rating: <%= restaurant.rating %></li>
+    <% end %>
+  </ul>
+</div>
